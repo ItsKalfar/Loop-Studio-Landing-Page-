@@ -1,0 +1,96 @@
+.imgGallery {
+  .container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    padding: 4rem 1.25rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-family: $josefinSans;
+      font-size: 1.95rem;
+    }
+    .img_gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 2rem auto;
+      .imgCard {
+        width: 335px;
+        height: 120px;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          opacity: 0.7;
+          p {
+            color: $Black;
+            opacity: 1;
+          }
+        }
+
+        p {
+          position: absolute;
+          bottom: 15px;
+          left: 20px;
+          text-transform: uppercase;
+          font-family: $josefinSans;
+          font-size: 1.25rem;
+          width: 25%;
+          color: $White;
+        }
+      }
+      .imgCard:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      .imgCard:first-child {
+        background-image: url(../images/mobile/image-deep-earth.jpg);
+      }
+      .imgCard:nth-child(2) {
+        background-image: url(../images/mobile/image-night-arcade.jpg);
+      }
+      .imgCard:nth-child(3) {
+        background-image: url(../images/mobile/image-soccer-team.jpg);
+      }
+      .imgCard:nth-child(4) {
+        background-image: url(../images/mobile/image-grid.jpg);
+      }
+      .imgCard:nth-child(5) {
+        background-image: url(../images/mobile/image-from-above.jpg);
+        p {
+          width: 40%;
+        }
+      }
+      .imgCard:nth-child(6) {
+        background-image: url(../images/mobile/image-pocket-borealis.jpg);
+      }
+      .imgCard:nth-child(7) {
+        background-image: url(../images/mobile/image-curiosity.jpg);
+      }
+      .imgCard:last-child {
+        background-image: url(../images/mobile/image-fisheye.jpg);
+      }
+    }
+
+    button {
+      padding: 0.5rem 2.15rem;
+      font-family: $alata;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 0.5rem;
+      background: transparent;
+      border: 2px solid $Black;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: $Black;
+        color: $White;
+      }
+    }
+  }
+}

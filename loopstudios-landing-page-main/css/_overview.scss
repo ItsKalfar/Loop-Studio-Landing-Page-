@@ -1,0 +1,29 @@
+.intro {
+  .container {
+    flex-direction: column;
+
+    .img_section {
+      margin: 2rem 0;
+      #intro_img {
+        width: 100%;
+      }
+    }
+    .intro_text_box {
+      text-align: center;
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: $josefinSans;
+        margin-bottom: 1rem;
+        color: $Black;
+      }
+      p {
+        line-height: 1.5;
+        font-family: $alata;
+        padding: 0 1rem;
+        color: $DarkGray;
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+@media (min-width: 768px) {
+  .header {
+    #hamburger {
+      display: none;
+    }
+
+    .container {
+      nav {
+        .desktop_menu {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/desktop/image-hero.jpg);
+    background-position: center;
+
+    .hero {
+      justify-content: flex-start;
+      width: 90%;
+      max-width: 1280px;
+      padding: 1rem;
+
+      .textBox {
+        margin: 0;
+        width: 400px;
+      }
+    }
+  }
+  .imgGallery {
+    .container {
+      max-width: 691px;
+      align-items: flex-start;
+      position: relative;
+
+      button {
+        position: absolute;
+        top: 63px;
+        right: 20px;
+      }
+
+      .img_gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        .imgCard {
+          width: 300px;
+          height: 120px;
+        }
+        .imgCard:not(:last-child) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 2.5rem 0;
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+
+      .footer_links {
+        display: flex;
+        margin: 0;
+      }
+
+      .footer_links li:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      .footer_social_links {
+        width: 100%;
+        justify-content: end;
+      }
+
+      .footer_social_links li:not(:last-child) {
+        margin-right: 0rem;
+      }
+      .footer_social_links li:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    .container {
+      flex-direction: row;
+      max-width: 1280px;
+      width: 90%;
+      position: relative;
+
+      .img_section {
+        width: 60%;
+        z-index: 1;
+      }
+
+      .intro_text_box {
+        width: 500px;
+        background-color: white;
+        z-index: 2;
+        text-align: left;
+        padding: 3rem;
+        position: absolute;
+        top: 40%;
+        right: 0;
+
+        h1 {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+  .header {
+    .hero {
+      .textBox {
+        width: 550px;
+        .hero_text {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  .intro {
+    .container {
+      max-width: 1280px;
+      width: 90%;
+      padding: 5rem 1.5rem 5rem 1.5rem;
+
+      .img_section {
+        width: 60%;
+      }
+      .intro_text_box {
+        top: 45%;
+        right: 5%;
+        padding: 4rem;
+        width: 600px;
+      }
+    }
+  }
+
+  .imgGallery {
+    .container {
+      max-width: 1280px;
+
+      .img_gallery {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1rem 0;
+
+        .imgCard {
+          width: 0.1fr;
+          height: 500px;
+        }
+
+        .imgCard:first-child {
+          background-image: url(../images/desktop/image-deep-earth.jpg);
+        }
+        .imgCard:nth-child(2) {
+          background-image: url(../images/desktop/image-night-arcade.jpg);
+        }
+        .imgCard:nth-child(3) {
+          background-image: url(../images/desktop/image-soccer-team.jpg);
+          p {
+            width: 50%;
+          }
+        }
+        .imgCard:nth-child(4) {
+          background-image: url(../images/desktop/image-grid.jpg);
+        }
+        .imgCard:nth-child(5) {
+          background-image: url(../images/desktop/image-from-above.jpg);
+          p {
+            width: 40%;
+          }
+        }
+        .imgCard:nth-child(6) {
+          background-image: url(../images/desktop/image-pocket-borealis.jpg);
+        }
+        .imgCard:nth-child(7) {
+          background-image: url(../images/desktop/image-curiosity.jpg);
+        }
+        .imgCard:last-child {
+          background-image: url(../images/desktop/image-fisheye.jpg);
+
+          p {
+            width: 50%;
+          }
+        }
+      }
+
+      button {
+        right: 15px;
+      }
+    }
+  }
+}
